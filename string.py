@@ -210,7 +210,7 @@ Returns False if there are any non-whitespace characters or if the string is emp
 # print("HELLO World".istitle())   # False (first word all uppercase)
 # print("hello world".istitle())   # False (all lowercase)
 
-        #######################################
+         #######################################
         #######################################
         #######################################
         ############STRING FUNCTION PART --3##
@@ -291,3 +291,20 @@ Returns False if there are any non-whitespace characters or if the string is emp
 # a = "Harry potter and the Prisoner of Azkaban"
 # print(a.rfind("potter"))
 # print(a.rfind("he",15, 23))
+
+
+        #######################################
+        #######################################
+        #######################################
+##########STRING SLICING #######################
+
+# a = "Harry Potter and the Goblet of fire"
+# b = "0123456789"
+# print (a)
+# print(a[0:5])
+# print(b[::2]) #print string with gap of 2
+# print(b[::-1])  #to  print a string in reverse order 
+# print(b[6::-1])  
+# print(a[6:12])
+# print(a[16:-4])
+# print(a[-4 :])
