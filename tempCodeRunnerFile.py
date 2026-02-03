@@ -1,4 +1,3 @@
-a.clear()
-print(a) #or
-d.clear()
-print(d)
+v = student.popitem()
+# print(v)
+# print(student)
