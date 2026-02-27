@@ -38,8 +38,8 @@
 
 
 ####################################
-fruits = ["apple", "banana", "cherry"]
-print(fruits)
+# fruits = ["apple", "banana", "cherry"]
+# print(fruits)
 ###############################
 # print(fruits[0])   # apple
 # print(fruits[-1])  # cherry
@@ -49,16 +49,36 @@ print(fruits)
 # print(fruits)
 
 ################################
-fruits.append("orange")   # add at end
-fruits.insert(1, "grapes") # add at index
-print(fruits)
+# fruits.append("orange")   # add at end
+# fruits.insert(1, "grapes") # add at index
+# print(fruits)
 
 
-fruits.remove("apple")
-print(fruits)
+# fruits.remove("apple")
+# print(fruits)
 
-fruits.pop()  # removes last element
-print(fruits)
+# fruits.pop()  # removes last element
+# print(fruits)
+
+
+##################################
+# for fruit in fruits:
+#     print(fruit)
+
+
+#############################
+numbers = (1, 2, 3, 4)
+print(numbers)
+print(numbers[0])   # 1
+print(numbers[-1])  # 4
+
+
+
+
+person = ("john", 20, "Developer")
+name, age, role = person
+print(name, age, role)
+
 
 
 
