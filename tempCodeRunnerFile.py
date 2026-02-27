@@ -1,7 +1,2 @@
-num =  ""
-    for i in range (len(data)):
-        if (data[i] == ","):
-            print(num)
-            num = ""
-        else:
-           num += data[i]
+fruits = ["apple", "banana", "cherry"]
+print(fruits)
