@@ -37,4 +37,10 @@ def greet(name):
 print(greet("john"))
 
 
+####################################
+fruits = ["apple", "banana", "cherry"]
+print(fruits)
+
+
+
 
