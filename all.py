@@ -20,8 +20,8 @@
 
 
 ####################################
-for i in range(5):
-    print(i)
+# for i in range(5):
+#     print(i)
 
 
 #######################################
@@ -31,15 +31,35 @@ for i in range(5):
 #     count += 1
 #######################################
 
-def greet(name):
-    return "Hello, " + name
+# def greet(name):
+#     return "Hello, " + name
 
-print(greet("john"))
+# print(greet("john"))
 
 
 ####################################
 fruits = ["apple", "banana", "cherry"]
 print(fruits)
+###############################
+# print(fruits[0])   # apple
+# print(fruits[-1])  # cherry
+#################################
+
+# fruits[1] = "mango"
+# print(fruits)
+
+################################
+fruits.append("orange")   # add at end
+fruits.insert(1, "grapes") # add at index
+print(fruits)
+
+
+fruits.remove("apple")
+print(fruits)
+
+fruits.pop()  # removes last element
+print(fruits)
+
 
 
 
