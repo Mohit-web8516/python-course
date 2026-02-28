@@ -9,12 +9,18 @@
 
 
 #Prime Number Check
-def is_prime(num):
-    if num < 2:
-        return False
-    for i in range(2, int(num**0.5) + 1):
-        if num % i == 0:
-            return False
-    return True
+# def is_prime(num):
+#     if num < 2:
+#         return False
+#     for i in range(2, int(num**0.5) + 1):
+#         if num % i == 0:
+#             return False
+#     return True
 
-print(is_prime(29))  # True
+# print(is_prime(29))  # True
+#Palindrome String
+def is_palindrome(s):
+    return s == s[::-1]
+
+print(is_palindrome("madam"))  # True
+print(is_palindrome("python")) # False
