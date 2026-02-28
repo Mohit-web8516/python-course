@@ -38,10 +38,23 @@
 
 #############Armstrong Number
 
-def is_armstrong(num):
-    digits = str(num)
-    total = sum(int(d)**len(digits) for d in digits)
-    return total == num
+# def is_armstrong(num):
+#     digits = str(num)
+#     total = sum(int(d)**len(digits) for d in digits)
+#     return total == num
 
-print(is_armstrong(153))  # True
-print(is_armstrong(123))  # False
+# print(is_armstrong(153))  # True
+# print(is_armstrong(123))  # False
+
+
+####Reverse a Number
+
+def reverse_number(num):
+    rev = 0
+    while num > 0:
+        digit = num % 10
+        rev = rev * 10 + digit
+        num //= 10
+    return rev
+
+print(reverse_number(12345))  # 54321
