@@ -1,8 +1,20 @@
 #Generate the first n numbers in the Fibonacci sequence.
-def fibonacci(n):
-    a, b = 0, 1
-    for _ in range(n):
-        print(a, end=" ")
-        a, b = b, a + b
+# def fibonacci(n):
+#     a, b = 0, 1
+#     for _ in range(n):
+#         print(a, end=" ")
+#         a, b = b, a + b
 
-fibonacci(10)
+# fibonacci(10)
+
+
+#Prime Number Check
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+print(is_prime(29))  # True
