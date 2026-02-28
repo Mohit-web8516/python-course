@@ -27,9 +27,21 @@
 
 
 ###############Factorial Using Recursion
-def factorial(n):
-    if n == 0 or n == 1:
-        return 1
-    return n * factorial(n - 1)
+# def factorial(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     return n * factorial(n - 1)
 
-print(factorial(5))  # 120
+# print(factorial(5))  # 120
+
+
+
+#############Armstrong Number
+
+def is_armstrong(num):
+    digits = str(num)
+    total = sum(int(d)**len(digits) for d in digits)
+    return total == num
+
+print(is_armstrong(153))  # True
+print(is_armstrong(123))  # False
