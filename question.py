@@ -19,8 +19,17 @@
 
 # print(is_prime(29))  # True
 #Palindrome String
-def is_palindrome(s):
-    return s == s[::-1]
+# def is_palindrome(s):
+#     return s == s[::-1]
 
-print(is_palindrome("madam"))  # True
-print(is_palindrome("python")) # False
+# print(is_palindrome("madam"))  # True
+# print(is_palindrome("python")) # False
+
+
+###############Factorial Using Recursion
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5))  # 120
