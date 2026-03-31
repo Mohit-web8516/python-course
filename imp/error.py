@@ -27,3 +27,19 @@ else:
     print("No error occurred!")   # Runs only if no exception
 finally:
     print("Execution finished!")  # Always runs
+
+
+#####################################################
+
+#Raising Exceptions Manually..
+
+
+def check_age(age):
+    if age < 0:
+        raise ValueError("Age cannot be negative!")
+    return age
+
+try:
+    check_age(-5)
+except ValueError as e:
+    print("Error:", e)
