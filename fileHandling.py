@@ -1,0 +1,27 @@
+#Reading file 
+
+# file = open("example.txt", "r")
+# content = file.read()
+# print(content)
+# file.close()
+############################################
+
+# file = open("example.txt", "r")
+# for line in file:
+#     print(line.strip())
+# file.close()
+
+
+############################################
+#Writing a file
+
+# file = open("example.txt", "w")
+# file.write("Hello, JOHN!\n")
+# file.write("This is a new line.")
+# file.close()
+
+
+###############################################
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
