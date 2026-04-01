@@ -59,12 +59,17 @@ finally:
 
 ######################################################
 
-def check_age(age):
-    if age < 0:
-        raise ValueError("Age cannot be negative!")
-    return age
+# def check_age(age):
+#     if age < 0:
+#         raise ValueError("Age cannot be negative!")
+#     return age
 
-try:
-    check_age(-5)
-except ValueError as e:
-    print("Error:", e)
+# try:
+#     check_age(-5)
+# except ValueError as e:
+#     print("Error:", e)
+
+
+#33333333333333333333333333333333333333333333333333
+
+
