@@ -47,13 +47,24 @@ finally:
 
 ##########################################################
 
-try:
-    num = int("25")
-    print("Converted number:", num)
-except ValueError:
-    print("Error: Invalid input.")
-else:
-    print("No error occurred!")   # Runs only if no exception
-finally:
-    print("Execution finished!")  # Always runs
+# try:
+#     num = int("25")
+#     print("Converted number:", num)
+# except ValueError:
+#     print("Error: Invalid input.")
+# else:
+#     print("No error occurred!")   # Runs only if no exception
+# finally:
+#     print("Execution finished!")  # Always runs
 
+######################################################
+
+def check_age(age):
+    if age < 0:
+        raise ValueError("Age cannot be negative!")
+    return age
+
+try:
+    check_age(-5)
+except ValueError as e:
+    print("Error:", e)
