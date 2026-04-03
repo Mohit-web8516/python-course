@@ -22,6 +22,12 @@
 
 
 ###############################################
-with open("example.txt", "r") as file:
-    content = file.read()
-    print(content)
+# with open("example.txt", "r") as file:
+#     content = file.read()
+#     print(content)
+
+########################################
+# Writing text to a file
+with open("example.txt", "w") as f:
+    f.write("Hello john!\n")
+    f.write("This is a file handling example.")
