@@ -49,5 +49,14 @@
 #####################################################
 
 # Adding new content without overwriting
-with open("example.txt", "a") as f:
-    f.write("\nThis line is appended.")
+# with open("example.txt", "a") as f:
+#     f.write("\nThis line is appended.")
+
+
+###############################################
+try:
+    with open("nonexistent.txt", "r") as f:
+        data = f.read()
+except FileNotFoundError:
+    print("Error: File does not exist!")
+
