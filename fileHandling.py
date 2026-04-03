@@ -43,6 +43,11 @@
 ############################################
 
 # Reading line by line
-with open("example.txt", "r") as f:
-    for line in f:
-        print("Line:", line.strip())
+# with open("example.txt", "r") as f:
+#     for line in f:
+#         print("Line:", line.strip())
+#####################################################
+
+# Adding new content without overwriting
+with open("example.txt", "a") as f:
+    f.write("\nThis line is appended.")
