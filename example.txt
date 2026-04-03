@@ -1,2 +1,2 @@
-Hello, JOHN!
-This is a new line.
+Hello john!
+This is a file handling example.
