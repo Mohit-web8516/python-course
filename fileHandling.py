@@ -28,6 +28,21 @@
 
 ########################################
 # Writing text to a file
-with open("example.txt", "w") as f:
-    f.write("Hello john!\n")
-    f.write("This is a file handling example.")
+# with open("example.txt", "w") as f:
+#     f.write("Hello john!\n")
+#     f.write("This is a file handling example.")
+
+
+
+
+########################################
+# # Reading the entire file
+# with open("example.txt", "r") as f:
+#     content = f.read()
+#     print("File content:\n", content)
+############################################
+
+# Reading line by line
+with open("example.txt", "r") as f:
+    for line in f:
+        print("Line:", line.strip())
