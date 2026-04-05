@@ -248,18 +248,30 @@
 
 ########################################################################
 
-balance = 5000
-withdraw = 2000
+# balance = 5000
+# withdraw = 2000
 
-if withdraw <= 0:
-    print("Invalid amount entered.")
-elif withdraw > balance:
-    print("Insufficient balance.")
+# if withdraw <= 0:
+#     print("Invalid amount entered.")
+# elif withdraw > balance:
+#     print("Insufficient balance.")
+# else:
+#     balance -= withdraw
+#     print("Transaction successful!")
+#     print("Remaining Balance:", balance)
+
+#############################################################
+
+age = 20
+citizenship = "Indian"
+
+if age >= 18:
+    if citizenship == "Indian":
+        print("Eligible to vote in India.")
+    else:
+        print("Not eligible: Wrong citizenship.")
 else:
-    balance -= withdraw
-    print("Transaction successful!")
-    print("Remaining Balance:", balance)
-
+    print("Not eligible: Age below 18.")
 
 
 
