@@ -234,16 +234,32 @@
 
 ###################################################################
 
-score = 82
+# score = 82
 
-if score >= 90:
-    print("Grade: A")
-elif score >= 75:
-    print("Grade: B")
-elif score >= 60:
-    print("Grade: C")
+# if score >= 90:
+#     print("Grade: A")
+# elif score >= 75:
+#     print("Grade: B")
+# elif score >= 60:
+#     print("Grade: C")
+# else:
+#     print("Grade: D")
+
+
+########################################################################
+
+balance = 5000
+withdraw = 2000
+
+if withdraw <= 0:
+    print("Invalid amount entered.")
+elif withdraw > balance:
+    print("Insufficient balance.")
 else:
-    print("Grade: D")
+    balance -= withdraw
+    print("Transaction successful!")
+    print("Remaining Balance:", balance)
+
 
 
 
