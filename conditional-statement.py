@@ -262,16 +262,19 @@
 
 #############################################################
 
-age = 20
-citizenship = "Indian"
+# age = 20
+# citizenship = "Indian"
 
-if age >= 18:
-    if citizenship == "Indian":
-        print("Eligible to vote in India.")
-    else:
-        print("Not eligible: Wrong citizenship.")
-else:
-    print("Not eligible: Age below 18.")
+# if age >= 18:
+#     if citizenship == "Indian":
+#         print("Eligible to vote in India.")
+#     else:
+#         print("Not eligible: Wrong citizenship.")
+# else:
+#     print("Not eligible: Age below 18.")
+
+
+##################################################
 
 
 
