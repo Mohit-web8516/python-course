@@ -275,22 +275,34 @@
 
 
 ##################################################
-username = "john43434"
-password = "securePass"
-account_active = True
+# username = "john43434"
+# password = "securePass"
+# account_active = True
 
-entered_user = "john45454"
-entered_pass = "securePass"
+# entered_user = "john45454"
+# entered_pass = "securePass"
 
-if entered_user == username and entered_pass == password:
-    if account_active:
-        print("Login successful! Welcome,", username)
-    else:
-        print("Account is inactive. Contact support.")
+# if entered_user == username and entered_pass == password:
+#     if account_active:
+#         print("Login successful! Welcome,", username)
+#     else:
+#         print("Account is inactive. Contact support.")
+# else:
+#     print("Invalid username or password.")
+
+
+################################################
+amount = 4500
+
+if amount >= 5000:
+    discount = 0.20
+elif amount >= 3000:
+    discount = 0.10
 else:
-    print("Invalid username or password.")
+    discount = 0.0
 
-
+final_price = amount - (amount * discount)
+print("Final Price after discount:", final_price)
 
 
 
