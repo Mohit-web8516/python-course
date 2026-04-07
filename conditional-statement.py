@@ -275,6 +275,20 @@
 
 
 ##################################################
+username = "john43434"
+password = "securePass"
+account_active = True
+
+entered_user = "john45454"
+entered_pass = "securePass"
+
+if entered_user == username and entered_pass == password:
+    if account_active:
+        print("Login successful! Welcome,", username)
+    else:
+        print("Account is inactive. Contact support.")
+else:
+    print("Invalid username or password.")
 
 
 
