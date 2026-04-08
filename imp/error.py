@@ -72,12 +72,28 @@ finally:
 
 #33333333333333333333333333333333333333333333333333
 
+# try:
+#     num = int(input("Enter a number: "))
+#     result = 100 / num
+#     print("Result:", result)
+# except ZeroDivisionError:
+#     print("Error: Cannot divide by zero!")
+# except ValueError:
+#     print("Error: Please enter a valid integer.")
+
+
+
+
+
+###################################################
+
 try:
-    num = int(input("Enter a number: "))
-    result = 100 / num
-    print("Result:", result)
-except ZeroDivisionError:
-    print("Error: Cannot divide by zero!")
-except ValueError:
-    print("Error: Please enter a valid integer.")
+    f = open("data.txt", "r")
+    content = f.read()
+    print("File Content:", content)
+except FileNotFoundError:
+    print("Error: File not found!")
+finally:
+    print("Closing file (if it was opened).")
+
 
