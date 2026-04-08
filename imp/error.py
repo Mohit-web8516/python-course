@@ -72,4 +72,12 @@ finally:
 
 #33333333333333333333333333333333333333333333333333
 
+try:
+    num = int(input("Enter a number: "))
+    result = 100 / num
+    print("Result:", result)
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero!")
+except ValueError:
+    print("Error: Please enter a valid integer.")
 
