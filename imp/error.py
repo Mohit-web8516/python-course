@@ -87,13 +87,25 @@ finally:
 
 ###################################################
 
-try:
-    f = open("data.txt", "r")
-    content = f.read()
-    print("File Content:", content)
-except FileNotFoundError:
-    print("Error: File not found!")
-finally:
-    print("Closing file (if it was opened).")
+# try:
+#     f = open("data.txt", "r")
+#     content = f.read()
+#     print("File Content:", content)
+# except FileNotFoundError:
+#     print("Error: File not found!")
+# finally:
+#     print("Closing file (if it was opened).")
 
+#######################################################
+
+balance = 3000
+withdraw = 4000
+
+try:
+    if withdraw > balance:
+        raise ValueError("Insufficient balance for withdrawal!")
+    balance -= withdraw
+    print("Transaction successful! Remaining balance:", balance)
+except ValueError as e:
+    print("Transaction failed:", e)
 
