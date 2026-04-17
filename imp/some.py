@@ -169,53 +169,102 @@
 ########################################################
 # Conditional Statements and Operators Demo
 
-def conditional_demo():
-    num = int(input("Enter a number: "))
-    if num > 0:
-        print("Positive number")
-    elif num < 0:
-        print("Negative number")
-    else:
-        print("Zero")
+# def conditional_demo():
+#     num = int(input("Enter a number: "))
+#     if num > 0:
+#         print("Positive number")
+#     elif num < 0:
+#         print("Negative number")
+#     else:
+#         print("Zero")
 
-def operators_demo():
-    a = int(input("Enter first number: "))
-    b = int(input("Enter second number: "))
+# def operators_demo():
+#     a = int(input("Enter first number: "))
+#     b = int(input("Enter second number: "))
 
-    # Arithmetic Operators
-    print("\n--- Arithmetic Operators ---")
-    print(f"{a} + {b} = {a + b}")
-    print(f"{a} - {b} = {a - b}")
-    print(f"{a} * {b} = {a * b}")
-    print(f"{a} / {b} = {a / b if b != 0 else 'Division by zero error'}")
-    print(f"{a} % {b} = {a % b if b != 0 else 'Modulo by zero error'}")
+#     # Arithmetic Operators
+#     print("\n--- Arithmetic Operators ---")
+#     print(f"{a} + {b} = {a + b}")
+#     print(f"{a} - {b} = {a - b}")
+#     print(f"{a} * {b} = {a * b}")
+#     print(f"{a} / {b} = {a / b if b != 0 else 'Division by zero error'}")
+#     print(f"{a} % {b} = {a % b if b != 0 else 'Modulo by zero error'}")
 
-    # Relational Operators
-    print("\n--- Relational Operators ---")
-    print(f"{a} > {b} = {a > b}")
-    print(f"{a} < {b} = {a < b}")
-    print(f"{a} == {b} = {a == b}")
-    print(f"{a} != {b} = {a != b}")
+#     # Relational Operators
+#     print("\n--- Relational Operators ---")
+#     print(f"{a} > {b} = {a > b}")
+#     print(f"{a} < {b} = {a < b}")
+#     print(f"{a} == {b} = {a == b}")
+#     print(f"{a} != {b} = {a != b}")
 
-    # Logical Operators
-    print("\n--- Logical Operators ---")
-    print(f"(a > 0) and (b > 0) = {(a > 0) and (b > 0)}")
-    print(f"(a > 0) or (b > 0) = {(a > 0) or (b > 0)}")
-    print(f"not(a > 0) = {not(a > 0)}")
+#     # Logical Operators
+#     print("\n--- Logical Operators ---")
+#     print(f"(a > 0) and (b > 0) = {(a > 0) and (b > 0)}")
+#     print(f"(a > 0) or (b > 0) = {(a > 0) or (b > 0)}")
+#     print(f"not(a > 0) = {not(a > 0)}")
+
+# def main():
+#     while True:
+#         print("\n--- Conditional & Operators Menu ---")
+#         print("1. Conditional Statements")
+#         print("2. Operators")
+#         print("3. Exit")
+
+#         choice = input("Enter your choice: ")
+
+#         if choice == "1":
+#             conditional_demo()
+#         elif choice == "2":
+#             operators_demo()
+#         elif choice == "3":
+#             print("Exiting... Keep practicing!")
+#             break
+#         else:
+#             print("Invalid choice, try again.")
+
+# if __name__ == "__main__":
+#     main()
+
+#####################################################
+
+# Case Statement + Break/Continue Demo
+
+def case_demo():
+    choice = int(input("Enter a number (1-3): "))
+    match choice:
+        case 1:
+            print("You chose ONE")
+        case 2:
+            print("You chose TWO")
+        case 3:
+            print("You chose THREE")
+        case _:
+            print("Invalid choice")
+
+def loop_control_demo():
+    print("\n--- Loop Control Demo ---")
+    for i in range(1, 6):
+        if i == 3:
+            print("Skipping 3 using continue")
+            continue
+        if i == 5:
+            print("Breaking loop at 5")
+            break
+        print("Value:", i)
 
 def main():
     while True:
-        print("\n--- Conditional & Operators Menu ---")
-        print("1. Conditional Statements")
-        print("2. Operators")
+        print("\n--- Case & Loop Control Menu ---")
+        print("1. Case Statement Demo")
+        print("2. Break/Continue Demo")
         print("3. Exit")
 
         choice = input("Enter your choice: ")
 
         if choice == "1":
-            conditional_demo()
+            case_demo()
         elif choice == "2":
-            operators_demo()
+            loop_control_demo()
         elif choice == "3":
             print("Exiting... Keep practicing!")
             break
