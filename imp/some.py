@@ -229,47 +229,50 @@
 
 # Case Statement + Break/Continue Demo
 
-def case_demo():
-    choice = int(input("Enter a number (1-3): "))
-    match choice:
-        case 1:
-            print("You chose ONE")
-        case 2:
-            print("You chose TWO")
-        case 3:
-            print("You chose THREE")
-        case _:
-            print("Invalid choice")
+# def case_demo():
+#     choice = int(input("Enter a number (1-3): "))
+#     match choice:
+#         case 1:
+#             print("You chose ONE")
+#         case 2:
+#             print("You chose TWO")
+#         case 3:
+#             print("You chose THREE")
+#         case _:
+#             print("Invalid choice")
 
-def loop_control_demo():
-    print("\n--- Loop Control Demo ---")
-    for i in range(1, 6):
-        if i == 3:
-            print("Skipping 3 using continue")
-            continue
-        if i == 5:
-            print("Breaking loop at 5")
-            break
-        print("Value:", i)
+# def loop_control_demo():
+#     print("\n--- Loop Control Demo ---")
+#     for i in range(1, 6):
+#         if i == 3:
+#             print("Skipping 3 using continue")
+#             continue
+#         if i == 5:
+#             print("Breaking loop at 5")
+#             break
+#         print("Value:", i)
 
-def main():
-    while True:
-        print("\n--- Case & Loop Control Menu ---")
-        print("1. Case Statement Demo")
-        print("2. Break/Continue Demo")
-        print("3. Exit")
+# def main():
+#     while True:
+#         print("\n--- Case & Loop Control Menu ---")
+#         print("1. Case Statement Demo")
+#         print("2. Break/Continue Demo")
+#         print("3. Exit")
 
-        choice = input("Enter your choice: ")
+#         choice = input("Enter your choice: ")
 
-        if choice == "1":
-            case_demo()
-        elif choice == "2":
-            loop_control_demo()
-        elif choice == "3":
-            print("Exiting... Keep practicing!")
-            break
-        else:
-            print("Invalid choice, try again.")
+#         if choice == "1":
+#             case_demo()
+#         elif choice == "2":
+#             loop_control_demo()
+#         elif choice == "3":
+#             print("Exiting... Keep practicing!")
+#             break
+#         else:
+#             print("Invalid choice, try again.")
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
+################################################
+# Hello World Program
+print("Hello, World!")
