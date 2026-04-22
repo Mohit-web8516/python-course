@@ -278,12 +278,20 @@
 # print("Hello, World!")
 ################################################
 # Variables and Data Types
-age = 20          # Integer
-pi = 3.1416       # Float
-name = "Mohit"    # String
-is_student = True # Boolean
+# age = 20          # Integer
+# pi = 3.1416       # Float
+# name = "Mohit"    # String
+# is_student = True # Boolean
 
-print("Age:", age)
-print("Pi:", pi)
-print("Name:", name)
-print("Student:", is_student)
+# print("Age:", age)
+# print("Pi:", pi)
+# print("Name:", name)
+# print("Student:", is_student)
+
+################################################
+# Input and Output
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+
+print("Hello,", name)
+print("You are", age, "years old.")
