@@ -275,4 +275,15 @@
 #     main()
 ################################################
 # Hello World Program
-print("Hello, World!")
+# print("Hello, World!")
+################################################
+# Variables and Data Types
+age = 20          # Integer
+pi = 3.1416       # Float
+name = "Mohit"    # String
+is_student = True # Boolean
+
+print("Age:", age)
+print("Pi:", pi)
+print("Name:", name)
+print("Student:", is_student)
